@@ -1,0 +1,37 @@
+/* clears space on all element */
+*{
+    margin: 0;
+}
+
+/* for the size of the log */
+#logo {
+    width: 100px; 
+}
+
+nav {
+    /* default display: flex is row; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: affects the horizontal arrangengement */
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+    position: fixed;
+}
+
+#nav-links {
+    display: flex;
+    /* signifies gap between navlinks */
+    column-gap: 40px;
+}
+
+nav button {
+    background-color: white;
+    padding: 10px 20px;
+    height: fit-content;
+    /* border: 2px solid blanchedalmond; */
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(92, 91, 91);
+    
+}
