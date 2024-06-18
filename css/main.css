@@ -1,6 +1,16 @@
 /* clears space on all element */
 *{
     margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* overflow-x: hidden; */
+    /* margin: auto; */
 }
 
 /* for the size of the log */
@@ -16,15 +26,23 @@ nav {
     justify-content: space-between;
     padding: 20px 40px;
     background-color: white;
-    position: fixed;
-}
+    /* /* position: fixed;
+    width: 100vw; */
+} 
 
 #nav-links {
     display: flex;
     /* signifies gap between navlinks */
     column-gap: 40px;
+    padding-top: 15px;
+    cursor: pointer;
 }
-
+a{
+    text-decoration: none;
+}
+#nav-links a {
+    color: inherit;
+}
 nav button {
     background-color: white;
     padding: 10px 20px;
@@ -32,6 +50,70 @@ nav button {
     /* border: 2px solid blanchedalmond; */
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(92, 91, 91);
-    
+    border-color: #B40000;
+}
+
+nav button:hover {
+    background-color: red;
+    color: white;
+  }
+
+
+#hero {
+    background-image: url(../assets/images/hangers-1850082_1280.jpg);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 20%;
+    padding: 200px 60px 0px 0px; 
+    /* text-align: left; */
+    margin-right: 200px;
+}
+
+.h1text {
+    font-size: 30px
+}
+
+.sub-text {
+    font-size: 20px;
+}
+
+.hero-button {
+   display: inline-block;
+   /* flex-direction: column; */
+   padding: 10px 20px;
+   background-color: rgb(123, 121, 121);
+   position: relative;
+   text-align: center;
+   border: none;
+   /* padding: 29px 31px; */
+}
+
+#about {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* max-width: 70%; */
+    /* padding: 90px; */
+}
+
+.about-container {
+    display: flex;
+    flex-direction:column ;
+}
+.about-img {
+    width: 451px;
+    height: 639.25px;
+}
+
+.about-text {
+    font-family: Baskervville, serif;
+    display: flex;
+    flex-direction: column;
 }
