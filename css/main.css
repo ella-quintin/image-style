@@ -4,13 +4,36 @@
     overflow-x: hidden;
 }
 
+/* .container {
+  width: 70%;
+  margin: auto;
+} */
+.pt-serif-regular {
+    font-family:  serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  
 body {
     font-family: Raleway, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    /* overflow-x: hidden; */
-    /* margin: auto; */
+    overflow-x: hidden; */
+   margin: auto;
 }
 
 /* for the size of the log */
@@ -37,12 +60,15 @@ nav {
     padding-top: 15px;
     cursor: pointer;
 }
+
 a{
     text-decoration: none;
 }
+
 #nav-links a {
     color: inherit;
 }
+
 nav button {
     background-color: white;
     padding: 10px 20px;
@@ -73,11 +99,15 @@ nav button:hover {
     bottom: 20%;
     padding: 200px 60px 0px 0px; 
     /* text-align: left; */
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    margin-left: 60px;
 }
 
 .h1text {
-    font-size: 30px
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
 }
 
 .sub-text {
@@ -92,28 +122,127 @@ nav button:hover {
    position: relative;
    text-align: center;
    border: none;
-   /* padding: 29px 31px; */
+   margin-left: 60px;
+   margin-top: 30px;
 }
 
-#about {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* max-width: 70%; */
-    /* padding: 90px; */
+#about-section {
+    padding: 40px 0px;
 }
 
-.about-container {
+/* .about-section .container {
     display: flex;
-    flex-direction:column ;
-}
-.about-img {
-    width: 451px;
-    height: 639.25px;
+} */
+#about-section .container {
+    display: flex;
 }
 
-.about-text {
-    font-family: Baskervville, serif;
+
+.about-image {
+    width: 50%;
+    position: relative;
+  }
+  
+
+.about-img {
+    height: 746px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+
+.about-img img {
+    width: 526px;
+    height: 746px;
+    border-top-left-radius: 20%;
+  }
+
+  .about-image .floating-card {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: #b40000;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    color: #fff;
+  }
+
+  .about-image .floating-card h1,
+  .about-image .floating-card h2 {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 900;
 }
+
+
+.about-text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.about-text.author-name {
+    display: flex;
+    align-items: center;
+}
+
+.about-text-container {
+    width: 80%;
+}
+
+.about-text img {
+    width: 80px;
+    height: 50px;
+}
+
+.hero-title {
+  font-family: "Baskervville", serif;
+  font-size: 70px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 20px 0px;
+}
+
+
+.subtitle {
+    font-family: "Baskervville", serif;
+    font-size: 46px;
+    font-weight: 400;
+    margin: 20px 0px;
+  }
+
+  .sub-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 1.5rem;
+    margin: 20px 0px;
+    font-weight: 700;
+  }
+
+  .body1 {
+    font-family: "Baskervville", serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0px;
+  }
+
+.body2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0px;
+  }
+
+  .small {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  
+  
+  
